@@ -1,0 +1,32 @@
+.benefits-item {
+    display: flex;
+    gap: 30px;
+}
+
+.benefits-icons {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-background);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-icon {}
+
+.benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    color: var(--title-color);
+}
+
+.benefits-text {
+    line-height: 1.71;
+    width: 270px;
+}
