@@ -1,5 +1,3 @@
-.filter {}
-
 .filter-list {
     justify-content: center;
     gap: 8px;
@@ -23,16 +21,16 @@
     transition-property: color, background-color, box-shadow;
     transition-duration: var(--duration);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--addres-color);
+        background-color: var(--accent-color);
+
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
-    color: var(--addres-color);
-    background-color: var(--accent-color);
-
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 .filter-card {
     flex-wrap: wrap;
@@ -48,6 +46,11 @@
     transition-property: box-shadow;
     transition-duration: var(--duration);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
 .filter-top-wrap {
@@ -71,11 +74,6 @@
     overflow: auto;
 }
 
-.filter-galery-item:hover,
-.filter-galery-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .filter-item {
     border: 1px solid #eeeeee;
